@@ -4,9 +4,9 @@ A simple application using JMS for messaging. It listens on a queue for text mes
 
 Start the application like this:
 
-```java -jar worker.jar worker1.properties```
+```java -jar worker-jar-with-dependencies.jar worker.properties```
 
-If no properties file is given, `worker.properties` is used.
+If no properties file is given, `worker.properties` is used as default.
 
 The application can connect to ActiveMQ as well as to AWS SQS. When using ActiveMQ, the `src/main/resource/jndi.properties` file may have to be adapted. When using SQS, the `aws.properties` file has to be present (you may rename and adapt the given `aws.properties` file). Please note that the application currently only works with the `eu-west-1` region.
 
