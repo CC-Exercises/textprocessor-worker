@@ -44,10 +44,10 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.21</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
+		<!-- name of the jar file to be built -->
 		<finalName>worker</finalName>
 		<plugins>
 			<plugin>
@@ -57,9 +57,9 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
-					<compilerArgument></compilerArgument>
 				</configuration>
 			</plugin>
+			<!-- builds a self-contained and runnable jar file -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
@@ -86,4 +86,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
